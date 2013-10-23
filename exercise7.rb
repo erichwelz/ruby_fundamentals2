@@ -20,12 +20,10 @@ puts "Result of 2nd cohort deletion:"
 students.delete(:cohort2)
 students.each { |k, v| puts "#{k}: #{v} students" }
 
-puts
-
+puts 
+#Sums numbers of students for all cohorts
 total = 0 
 students.each do |k,v| 
   total += v
 end
 puts "The amount of students in all cohorts is #{total}."
-
-#refactor students.each to a method
